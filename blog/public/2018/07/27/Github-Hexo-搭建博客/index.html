@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="Think">
 <meta property="og:description" content="Hexo是一款基于Node.js的静态博客框架，依赖少，易于安装使用，可以方便的生成静态网页托管在GitHub上 准备工作GitNode.jsNpm">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-27T09:54:51.615Z">
+<meta property="og:updated_time" content="2018-07-30T05:59:32.233Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Github + Hexo 搭建博客">
 <meta name="twitter:description" content="Hexo是一款基于Node.js的静态博客框架，依赖少，易于安装使用，可以方便的生成静态网页托管在GitHub上 准备工作GitNode.jsNpm">
@@ -342,7 +342,7 @@
 </ol>
 <p>Hexo命令：<a href="https://hexo.io/docs/commands.html" target="_blank" rel="noopener">https://hexo.io/docs/commands.html</a></p>
 <h2 id="推送网站"><a href="#推送网站" class="headerlink" title="推送网站"></a>推送网站</h2><p>1.将我们的Hexo与GitHub关联起来，打开站点的配置文件_config.yml，翻到最后修改为：<br>deploy:<br>type: git<br>repo: GitHub上仓库的完整路径<br>branch: master</p>
-<p>2.安装Git部署插件<br>npm install hexo-deployer-git –save</p>
+<p>2.安装Git部署插件<br>npm install hexo-deployer-git -save</p>
 <p>3.输入如下命令，完成推送<br>hexo clean<br>hexo g<br>hexo d #deploy</p>
 <p>在浏览器地址栏输入{用户名}.github.io，即可看到博客内容</p>
 <h2 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h2><p>如果想使用我们自己的域名，就需要进行绑定域名<br>1.进入域名解析，CNAME {用户名}.github.io<br>2.登录GitHub，进入创建的仓库，点击settings，设置Custom domain，输入自己的域名<br>3.进入本地博客文件夹 ，进入blog/source目录下，新建CNAME文件，保存自己的域名</p>

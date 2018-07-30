@@ -41,7 +41,7 @@ repo: GitHub上仓库的完整路径
 branch: master
 
 2.安装Git部署插件
-npm install hexo-deployer-git --save
+npm install hexo-deployer-git -save
 
 3.输入如下命令，完成推送
 hexo clean
