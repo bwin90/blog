@@ -1,7 +1,7 @@
 ---
 title: Github + Hexo 搭建博客
-date: 2018-07-27 16:55:41
-category: 工具
+date: 2017-07-27 16:55:41
+category: Other
 tags:
 ---
 

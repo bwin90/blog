@@ -2,7 +2,7 @@
 title: ubuntu系统安装PostgreSQL
 date: 2018-05-23 14:17:36
 tags:
-categories: 数据库
+categories: Database
 ---
 
 # 安装步骤

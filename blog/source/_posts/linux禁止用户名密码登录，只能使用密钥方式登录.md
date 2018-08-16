@@ -2,7 +2,7 @@
 title: linux禁止用户名密码登录，只能使用密钥方式登录
 date: 2016-05-02 11:00:00
 tags:
-categories: linux
+categories: Linux
 ---
 
 编辑
