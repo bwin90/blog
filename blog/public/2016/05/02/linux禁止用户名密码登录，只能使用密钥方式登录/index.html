@@ -94,17 +94,17 @@
 
 
 
-<meta name="description" content="Hexo是一款基于Node.js的静态博客框架，依赖少，易于安装使用，可以方便的生成静态网页托管在GitHub上 准备工作GitNode.jsNpm">
+<meta name="description" content="编辑vim /etc/ssh/sshd_config 修改以下内容PasswordAuthentication no //禁止密码方式登录PubkeyAuthentication yes //允许的方式登录 重启/etc/init.d/sshd reload">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Github + Hexo 搭建博客">
-<meta property="og:url" content="http://yoursite.com/2018/07/27/Github-Hexo-搭建博客/index.html">
+<meta property="og:title" content="linux禁止用户名密码登录，只能使用密钥方式登录">
+<meta property="og:url" content="http://yoursite.com/2016/05/02/linux禁止用户名密码登录，只能使用密钥方式登录/index.html">
 <meta property="og:site_name" content="Think">
-<meta property="og:description" content="Hexo是一款基于Node.js的静态博客框架，依赖少，易于安装使用，可以方便的生成静态网页托管在GitHub上 准备工作GitNode.jsNpm">
+<meta property="og:description" content="编辑vim /etc/ssh/sshd_config 修改以下内容PasswordAuthentication no //禁止密码方式登录PubkeyAuthentication yes //允许的方式登录 重启/etc/init.d/sshd reload">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-08-07T02:40:12.834Z">
+<meta property="og:updated_time" content="2018-08-16T01:40:02.094Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Github + Hexo 搭建博客">
-<meta name="twitter:description" content="Hexo是一款基于Node.js的静态博客框架，依赖少，易于安装使用，可以方便的生成静态网页托管在GitHub上 准备工作GitNode.jsNpm">
+<meta name="twitter:title" content="linux禁止用户名密码登录，只能使用密钥方式登录">
+<meta name="twitter:description" content="编辑vim /etc/ssh/sshd_config 修改以下内容PasswordAuthentication no //禁止密码方式登录PubkeyAuthentication yes //允许的方式登录 重启/etc/init.d/sshd reload">
 
 
 
@@ -133,13 +133,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/07/27/Github-Hexo-搭建博客/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/05/02/linux禁止用户名密码登录，只能使用密钥方式登录/"/>
 
 
 
 
 
-  <title>Github + Hexo 搭建博客 | Think</title>
+  <title>linux禁止用户名密码登录，只能使用密钥方式登录 | Think</title>
   
 
 
@@ -262,7 +262,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/27/Github-Hexo-搭建博客/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/05/02/linux禁止用户名密码登录，只能使用密钥方式登录/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nick">
@@ -279,7 +279,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Github + Hexo 搭建博客</h1>
+          <h1 class="post-title" itemprop="name headline">linux禁止用户名密码登录，只能使用密钥方式登录</h1>
         
 
         <div class="post-meta">
@@ -291,8 +291,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-27T16:55:41+08:00">
-                2018-07-27
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-05-02T11:00:00+08:00">
+                2016-05-02
               </time>
             
 
@@ -314,8 +314,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/工具/" itemprop="url" rel="index">
-                    <span itemprop="name">工具</span>
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
                   </a>
                 </span>
 
@@ -351,22 +351,10 @@
       
 
       
-        <p>Hexo是一款基于Node.js的静态博客框架，依赖少，易于安装使用，可以方便的生成静态网页托管在GitHub上</p>
-<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p>Git<br>Node.js<br>Npm<br><a id="more"></a></p>
-<h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><h2 id="获得个人网站域名"><a href="#获得个人网站域名" class="headerlink" title="获得个人网站域名"></a>获得个人网站域名</h2><pre><code>购买个人域名
-</code></pre><h2 id="GitHub创建个人仓库"><a href="#GitHub创建个人仓库" class="headerlink" title="GitHub创建个人仓库"></a>GitHub创建个人仓库</h2><pre><code>仓库名约定为：{用户名}.github.io，比如我的仓库名为：bwin90.github.io
-</code></pre><h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>1.在本地电脑创建一个目录，比如Blog。Hexo框架与自己发布的网页都会存储在这个目录下<br>2.进入Blog目录，安装Hexo<br>npm install -g hexo-cli</p>
-<ol start="3">
-<li>等待安装完成，初始化博客<br>hexo init blog</li>
-<li>进入blog目录<br>hexo new {文章名称}<br>hexo g # hexo generate<br>hexo s # hexo server<br>以上命令执行完后，打开浏览器输入地址：localhost:4000, 可以看到刚才创建的文章</li>
-</ol>
-<p>Hexo命令：<a href="https://hexo.io/docs/commands.html" target="_blank" rel="noopener">https://hexo.io/docs/commands.html</a></p>
-<h2 id="推送网站"><a href="#推送网站" class="headerlink" title="推送网站"></a>推送网站</h2><p>1.将我们的Hexo与GitHub关联起来，打开站点的配置文件_config.yml，翻到最后修改为：<br>deploy:<br>type: git<br>repo: GitHub上仓库的完整路径<br>branch: master</p>
-<p>2.安装Git部署插件<br>npm install hexo-deployer-git -save</p>
-<p>3.输入如下命令，完成推送<br>hexo clean<br>hexo g<br>hexo d #deploy</p>
-<p>在浏览器地址栏输入{用户名}.github.io，即可看到博客内容</p>
-<h2 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h2><p>如果想使用我们自己的域名，就需要进行绑定域名<br>1.进入域名解析，CNAME {用户名}.github.io<br>2.登录GitHub，进入创建的仓库，点击settings，设置Custom domain，输入自己的域名<br>3.进入本地博客文件夹 ，进入blog/source目录下，新建CNAME文件，保存自己的域名</p>
-<h2 id="更多设置，待续…"><a href="#更多设置，待续…" class="headerlink" title="更多设置，待续…"></a>更多设置，待续…</h2>
+        <p>编辑<br>vim /etc/ssh/sshd_config</p>
+<p>修改以下内容<br>PasswordAuthentication no //禁止密码方式登录<br>PubkeyAuthentication yes //允许的方式登录</p>
+<p>重启<br>/etc/init.d/sshd reload</p>
+
       
     </div>
     
@@ -390,18 +378,14 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/07/27/linux-sed-用法/" rel="next" title="linux sed 用法">
-                <i class="fa fa-chevron-left"></i> linux sed 用法
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/08/01/rsync命令/" rel="prev" title="rsync命令">
-                rsync命令 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/04/26/多进程-VS-多线程/" rel="prev" title="多进程 VS 多线程">
+                多进程 VS 多线程 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -454,17 +438,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/20180810093732.jpg"
@@ -517,22 +492,6 @@
 
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#准备工作"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#步骤"><span class="nav-number">2.</span> <span class="nav-text">步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#获得个人网站域名"><span class="nav-number">2.1.</span> <span class="nav-text">获得个人网站域名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub创建个人仓库"><span class="nav-number">2.2.</span> <span class="nav-text">GitHub创建个人仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Hexo"><span class="nav-number">2.3.</span> <span class="nav-text">安装Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#推送网站"><span class="nav-number">2.4.</span> <span class="nav-text">推送网站</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#绑定域名"><span class="nav-number">2.5.</span> <span class="nav-text">绑定域名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更多设置，待续…"><span class="nav-number">2.6.</span> <span class="nav-text">更多设置，待续…</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
