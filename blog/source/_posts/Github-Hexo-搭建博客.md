@@ -22,31 +22,44 @@ Npm
 ## 安装Hexo
 1.在本地电脑创建一个目录，比如Blog。Hexo框架与自己发布的网页都会存储在这个目录下
 2.进入Blog目录，安装Hexo
+```
 npm install -g hexo-cli
+```
 3. 等待安装完成，初始化博客
 hexo init blog
 4. 进入blog目录
+```
 hexo new {文章名称}
 hexo g # hexo generate
 hexo s # hexo server
+```
 以上命令执行完后，打开浏览器输入地址：localhost:4000, 可以看到刚才创建的文章
 
 Hexo命令：https://hexo.io/docs/commands.html
 
 ## 推送网站
 1.将我们的Hexo与GitHub关联起来，打开站点的配置文件_config.yml，翻到最后修改为：
-deploy: 
+deploy:
 type: git
 repo: GitHub上仓库的完整路径
 branch: master
 
 2.安装Git部署插件
+
+```
 npm install hexo-deployer-git -save
+```
 
 3.输入如下命令，完成推送
+
+```
 hexo clean
+
 hexo g
-hexo d #deploy
+
+#deploy
+hexo d
+```
 
 在浏览器地址栏输入{用户名}.github.io，即可看到博客内容
 
